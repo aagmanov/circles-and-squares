@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 import { ref } from 'vue'
-import { generateFigures } from '@/composables/useFigures'
 import Header from '@/components/Header.vue'
 import AsideMenu from '@/components/AsideMenu.vue'
 import Main from '@/components/Main.vue'
@@ -11,8 +10,6 @@ const showAside: Ref<boolean> = ref(false)
 const onBurgerButtonClick = (): void => {
  showAside.value = !showAside.value
 }
-
-generateFigures(24)
 </script>
 
 <template>
